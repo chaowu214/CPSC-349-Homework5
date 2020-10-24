@@ -34,9 +34,9 @@
                             placeholder="dr@who.com" required />
                     </div>
             </div>
-            <div class="radio"><label><input type="radio" name="size" value="short">Short</label></div>
-            <div class="radio"><label><input type="radio" name="size" value="tall">Tall</label></div>
-            <div class="radio"><label><input type="radio" name="size" value="grande">Grande</label></div>
+            <div class="radio"><label><input id = "sizeShort" type="radio" name="size" value="short" checked>Short</label></div>
+            <div class="radio"><label><input id = "sizeTall" type="radio" name="size" value="tall">Tall</label></div>
+            <div class="radio"><label><input id = "sizeGrande" type="radio" name="size" value="grande">Grande</label></div>
             <div class="form-group">
                 <label for="flavorShot">Flavor Shot</label>
                 <select id="flavorShot" class="form-control" name="flavor">
@@ -48,9 +48,9 @@
             </div>
             <div class="form-group">
                 <label for="strengthLevel">Caffeine Rating</label>
-                <input name="strength" id="strengthLevel" type="range" value="30">
+                <input id = "level" name="strength" id="strengthLevel" type="range" value="30">
             </div>
-            <button type="submit" class="btn btn-default">Submit</button>
+            <button id = "submitButton" type="submit" class="btn btn-default">Submit</button>
             <button type="reset" class="btn btn-default">Reset</button>
             </form>
         </div>
@@ -65,6 +65,25 @@
     </section>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+    
+
+
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/7.24.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="/__/firebase/7.24.0/firebase-analytics.js"></script>
+
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-firestore.js"></script>
+
+
     <script src="scripts/validation.js" charset="utf-8"></script>
     <script src="scripts/checklist.js" charset="utf-8"></script>
     <script src="scripts/datastore.js" charset="utf-8"></script>
